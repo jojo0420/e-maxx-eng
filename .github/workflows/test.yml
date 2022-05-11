@@ -24,5 +24,6 @@ jobs:
           mkdocs build --strict
       - name: Run algorithm code tests
         run: |
+          ls -alt
           ./test.sh
         working-directory: test
